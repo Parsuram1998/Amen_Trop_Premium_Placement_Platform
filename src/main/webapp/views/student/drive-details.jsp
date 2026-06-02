@@ -570,7 +570,7 @@ body::after{
 
         </div>
 
-        <a href="${pageContext.request.contextPath}/student/apply-drive/${drive.id}"
+        <a href="${pageContext.request.contextPath}/student/apply/${drive.id}"
            class="apply-btn">
 
             <i class="fa-solid fa-paper-plane"></i>
