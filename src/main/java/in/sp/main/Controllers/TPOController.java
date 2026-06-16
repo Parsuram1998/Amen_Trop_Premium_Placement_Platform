@@ -514,6 +514,8 @@ public class TPOController {
         header.createCell(5).setCellValue("12th %");
         header.createCell(6).setCellValue("Degree %");
         header.createCell(7).setCellValue("Status");
+        header.createCell(8).setCellValue("Company Name");
+        header.createCell(9).setCellValue("Package");
 
         int rowNum = 1;
 
@@ -531,6 +533,20 @@ public class TPOController {
             row.createCell(5).setCellValue(s.getTwelfthPercentage());
             row.createCell(6).setCellValue(s.getDegreePercentage());
             row.createCell(7).setCellValue(app.getStatus());
+            
+            if(app.getStatus().equalsIgnoreCase("SELECTED"))
+            {
+            row.createCell(8).setCellValue(app.getDrive().getCompanyName());
+            row.createCell(9).setCellValue(app.getDrive().getSalary());
+            }
+            else
+       
+            {
+            	 row.createCell(8).setCellValue("N/A");
+            	 row.createCell(9).setCellValue("N/A");
+            }
+           
+            
         }
 
         response.setContentType("application/vnd.openxmlformats-officedocument.spreadsheetml.sheet");
