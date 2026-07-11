@@ -617,7 +617,7 @@ button:hover{
 
         <!-- REGISTER -->
 
-        <div class="bottom-text">
+        <%-- <div class="bottom-text">
 
             Don't have an account?
 
@@ -627,7 +627,7 @@ button:hover{
 
             </a>
 
-        </div>
+        </div> --%>
 
     </div>
 
